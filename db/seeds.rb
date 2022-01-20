@@ -18,7 +18,6 @@ fake_restaurants =
     pizza_south =  { name: "Pizza South", address: "59A Shoreditch High St, London E1 6PQ", category: "italian" }
   ]
 
-
 fake_restaurants.each do |attributes|
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"

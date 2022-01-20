@@ -1,0 +1,9 @@
+<ul class="list-group">
+  <% @restaurant.reviews.each do |review| %>
+    <li class="list-group-item"><%= review.content %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'back', restaurants_path %>
+<%= link_to 'edit', edit_restaurant_path(@restaurant) %>
+<%= link_to 'delete', restaurant_path(@restaurant), method: :delete, data: { confirm: ' Are you sure? '} %>
